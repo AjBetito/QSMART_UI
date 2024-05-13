@@ -3,18 +3,131 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     </head>
     <body>
-        <div>
-            <p>Your Ticket Number</p>
-            <h1>#27</h1>
-            <div>
-                <p>People in Queue</p>
-                <p><b>60</b></p>
+        <style>
+        body{
+            font-family: Poppins;
+            flex-direction: center;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        
+        h1{
+            font-size: 80px;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        .num{
+            font-size: 30px;
+            margin: 0;
+        }
+        
+        .box{
+            border: 4px solid #00396B;
+            padding: 20px;
+            width: 350px;
+
+            background-color: white;
+            display: inline-block;
+            border-radius: 10px;
+            position: relative;
+        }
+        
+        .box2{
+            border: 4px solid #00398A;
+            padding: 80px;
+            width: 400px;
+            height: 600px;
+            text-align: left;
+
+            background-color: #00398A;
+            display: inline-block;
+            border-radius: 10px;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        
+        .box3{
+            border: 1px solid black;
+            padding: 1px;
+            width: 400px;
+
+            background-color: white;
+            display: inline-block;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            
+        }
+        
+        .inbluebox{
+            color: white;
+            text-align: left;
+        }
+        
+        .queue{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .divider1{
+            border-top: 2px solid black;
+            width: 100%;
+            margin: 10px 0;
+        }
+        
+        .divider2{
+            border-left: 2px solid black;
+            height: 50px;
+        }
+        
+        .queue2{
+            flex: 1px;
+            padding: 0 10px;
+            align-items: center;
+        }
+        </style>
+       <div class="box">
+           <p><b>Your Ticket Number</b></p>
+           <h1>#27</h1>
+           <div class="divider1"></div>
+           <div class="queue">
+               <div class="queue2">
+                   <p>People in Queue</p>
+                   <p class="num">60</p>
+               </div>
+               <div class="divider2"></div>
+               <div class=queue2>
+                   <p>Ticket Processing</p>
+                   <p class="num">9</p>
+               </div>
+           </div>
+           
+       </div>
+        
+        <div class="box2">
+            <h2 class="inbluebox"><i>Next in Line</i></h2>
+            <div class="box3">
+                <p class="num">10</p>
             </div>
-            <div>
-                <p>Ticket Processing</p>
-                <p><b>9</b></p>
+            <div class="box3">
+                <p class="num">11</p>
+            </div>
+            <div class="box3">
+                <p class="num">12</p>
+            </div>
+            <div class="box3">
+                <p class="num">13</p>
             </div>
         </div>
     </body>
