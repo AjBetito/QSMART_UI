@@ -1,2 +1,5 @@
 # QSMART_UI
-a private repo for me for my qsmart ui
+The repository for the UI of QSMART.
+
+Notes:
+Still needs the QSMART logo.
