@@ -24,6 +24,21 @@
                 margin-bottom: 200px;
             }
 
+            input {
+                width: 90%;
+                border: none;
+                outline: none;
+                padding: 10px;
+            }
+
+            button {
+                width: 100%;
+                border: none;
+                background: none;
+                padding: 10px;
+                cursor: pointer;
+            }
+
             .content{
                 width: 400px;
                 text-align: left;
@@ -88,26 +103,28 @@
 
         <img src="qsmartlogo.png" alt="QSmart Logo">
         <div class="content">
-            <p class="line">Gbox Account</p>
-            <div class="box2">
-                <p>Your Gbox Account</p>
-            </div>
+            <form action="login" method="post">
+                <p class="line">Gbox Account</p>
+                <div class="box2">
+                    <input type="text" name="gbox_account" placeholder="Your Gbox Account">
+                </div>
 
-            <p class="line">Password</p>
-            <div class="box2">
-                <p>Your Password</p>
-            </div>
+                <p class="line">Password</p>
+                <div class="box2">
+                    <input type="password" name="password" placeholder="Your Password">
+                </div>
+            </form>
 
             <p class="link"><u>Forgot Password?</u></p>
         </div>
 
         <div class="box">
-            <p>Login</p>
+            <button type="submit">Login</button>
         </div>
         
         <div class="signup">
             <p class="faded">Don't have an account?</p>
-            <p class="link"><b>Sign Up</b></p>
+            <p><a href="singup" class="link"><b>Sign Up</b></a></p>
         </div>
     </body>
 </html>
