@@ -19,9 +19,22 @@
                 padding: 0;
             }
 
+            .backb{
+                align-self: flex-start;
+                color: #03298A;
+                font-weight: bold;
+            }
+
             .content{
                 width: 400px;
                 text-align: left;
+            }
+
+            input{
+                width: 90%;
+                border: none;
+                outline: none;
+                padding: 10px;
             }
 
             .registerbox{
@@ -82,39 +95,38 @@
         </style>
 
         <div class="content">
-            <h1 class="bold">Sign Up</h1>
-            <p class="faded">Create your account</p>
+            <p class="backb">> Back</p>
+            <div class="content">
+                <h1 class="bold">Sign Up</h1>
+                <p class="faded">Create your account</p>
+            </div>
+    
+            <h2 class="bold">Student/Staff</h2>
+            <form action="login" method="post">
+                <p class="bold">Name</p>
+                <div class="inputbox">
+                    <input type="text" name="name" placeholder="Your Name">
+                </div>
+
+                <p class="bold">Email</p>
+                <div class="inputbox">
+                    <input type="text" name="email" placeholder="Your Email">
+                </div>
+
+                <p class="bold">Password</p>
+                <div class="inputbox">
+                    <input type="password" name="password" placeholder="Your Password">
+                </div>
+
+                <p class="bold">Re-type Password</p>
+                <div class="inputbox">
+                    <input type="password" name="passwordconfirm" placeholder="Your Password">
+                </div>
+            </form>
         </div>
 
-        <h2 class="bold">Student/Staff</h2>
 
-        <div class="content">
-            <p class="bold">Name</p>
-            <div class="inputbox">
-                <p>Your Name</p>
-            </div>
 
-            <p class="bold">Email</p>
-            <div class="inputbox">
-                <p>Your Email</p>
-            </div>
-
-            <p class="bold">Phone Number</p>
-            <div class="inputbox">
-                <p>Your Number</p>
-            </div>
-
-            <p class="bold">Password</p>
-            <div class="inputbox">
-                <p>Your Password</p>
-            </div>
-
-            <p class="bold">Re-type Password</p>
-            <div class="inputbox">
-                <p>Your Password</p>
-            </div>
-
-        </div>
 
         <div class="registerbox">
             <!--<p>Register</p>-->
